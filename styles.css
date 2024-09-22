@@ -1,0 +1,273 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #eef1f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+header .logo:hover {
+  color: #7f58ff;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #7f58ff;
+  transform: scale(1.1);
+}
+
+.search-btn {
+  background-color: #6b47d1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #555;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  background-image: url('Assets/Concert scene.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  border-radius: 0.5cm;
+
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.hero-text p {
+  margin-bottom: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: border-color 0.3s ease;
+}
+
+.search-box input:focus {
+  border-color: #7f58ff;
+}
+
+.search-box button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-box button:hover {
+  background-color: #555;
+}
+
+.event-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.my-tickets, .events, .more-tickets {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 20px; 
+}
+
+.my-tickets:hover, .events:hover, .more-tickets:hover {
+  transform: translateY(-5px);
+}
+
+.my-tickets h2, .events h2, .more-tickets h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.event-card {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.smart-contract-btn {
+  background-color: #7f58ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.smart-contract-btn:hover {
+  background-color: #6b47d1;
+}
+
+.events .event {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.events .event:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.book-btn, .sleep-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn {
+  background-color: #6b47d1;
+  color: #fff;
+}
+
+.book-btn:hover {
+  background-color: #333;
+}
+
+.sleep-btn {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.sleep-btn:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .event-details {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .my-tickets, .events, .more-tickets {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  header nav ul {
+      flex-direction: column;
+  }
+
+  header nav ul li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+}
